@@ -1,20 +1,22 @@
-const defaultTemplate = (bottles) => {
+const bottlesVerse = (bottles) => {
   return `${bottles} bottles of beer on the wall, ${bottles} bottles of beer.
 Take one down and pass it around, ${bottles - 1} bottles of beer on the wall.`;
-}
-const lastBottleTemplate = (bottles) => {
+};
+
+const lastBottleVerse = () => {
   return '1 bottle of beer on the wall, 1 bottle of beer.' + 
     '\nTake one down and pass it around, no more bottles of beer.';
-}
-const lastSentenceTemplate = () => {
-  return '\nGo to the store and buy some more, 99 bottles of beer on the wall.';
-}
+};
 
-const playSong = (bottles) => {
+const goToStoreVerse = () => {
+  return '\nGo to the store and buy some more, 99 bottles of beer on the wall.';
+};
+
+const buildVerse = (bottles) => {
   if(bottles > 1) {
-    return defaultTemplate(bottles);
+    return bottlesVerse(bottles);
   } else {
-    return lastBottleTemplate(bottles) + lastSentenceTemplate();
+    return lastBottleVerse() + goToStoreVerse();
   }
 }
-module.exports = playSong;
+module.exports = buildVerse;
