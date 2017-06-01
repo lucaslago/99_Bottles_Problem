@@ -1,0 +1,17 @@
+{
+  "name": "99_Bottles_Problem",
+  "version": "1.0.0",
+  "description": "You must print the lyrics of the song as follows:",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test:watch": "mocha --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.0.1",
+    "mocha": "^3.4.2"
+  }
+}
