@@ -4,8 +4,8 @@
   "description": "You must print the lyrics of the song as follows:",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive",
-    "test:watch": "mocha --recursive --watch"
+    "test": "mocha --recursive ./lib",
+    "test:watch": "mocha --recursive --watch ./lib"
   },
   "keywords": [],
   "author": "",
